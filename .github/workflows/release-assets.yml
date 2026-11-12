@@ -1,0 +1,64 @@
+name: Release assets
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Existing release tag to attach assets to
+        required: true
+        default: v1.0.0
+
+permissions:
+  contents: write
+
+concurrency:
+  group: release-assets-${{ github.event.release.tag_name || inputs.tag }}
+  cancel-in-progress: false
+
+jobs:
+  attach:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Resolve tag
+        id: tag
+        shell: bash
+        run: |
+          if [[ "${GITHUB_EVENT_NAME}" == "release" ]]; then
+            tag="${{ github.event.release.tag_name }}"
+          else
+            tag="${{ inputs.tag }}"
+          fi
+          echo "tag=${tag}" >> "$GITHUB_OUTPUT"
+
+      - name: Checkout release tag
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ steps.tag.outputs.tag }}
+
+      - name: Prepare ZIP assets
+        shell: bash
+        run: |
+          set -euo pipefail
+          tag="${{ steps.tag.outputs.tag }}"
+          version="${tag#v}"
+          mkdir -p release
+          if ! compgen -G "release/*.zip" > /dev/null; then
+            zip -r "release/beta-ai-search-${version}.zip" beta-ai-search
+            zip -r "release/beta-ai-search-source-${version}.zip" \
+              beta-ai-search docs tests README.md TEST-REPORT.fa.md .gitignore .github
+          fi
+          (cd release && sha256sum *.zip > SHA256SUMS.txt)
+          ls -lh release
+
+      - name: Upload assets to GitHub Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          tag="${{ steps.tag.outputs.tag }}"
+          gh release view "$tag" --repo "$GITHUB_REPOSITORY" > /dev/null
+          gh release upload "$tag" release/*.zip release/SHA256SUMS.txt \
+            --clobber --repo "$GITHUB_REPOSITORY"
