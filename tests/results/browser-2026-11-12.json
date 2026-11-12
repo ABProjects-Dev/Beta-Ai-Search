@@ -1,0 +1,155 @@
+{
+  "results": [
+    {
+      "name": "shortcode page has one existing Woo grid",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "typing does not call the AI search API",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "button click filters the same grid without navigation",
+      "ok": true,
+      "detail": "13,10"
+    },
+    {
+      "name": "existing WooCommerce card template is preserved",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "× clears text but does not reset results",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "حذف فیلتر restores the original grid",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "exact Persian no-result message and no substitute products",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "AI outage shows error + retry and leaves products untouched",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "retry succeeds after the provider recovers",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Elementor Free renders the registered widget above an existing grid",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Elementor Free page keeps one grid and updates it in place",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "category archive searches the whole catalog, not the current category",
+      "ok": true,
+      "detail": "13"
+    },
+    {
+      "name": "category archive reset restores its original products",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "result pagination starts at page one with native cards",
+      "ok": true,
+      "detail": "1 / 2"
+    },
+    {
+      "name": "next page renders the remaining matched parent once",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "reset removes result pagination and restores the original grid",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "multi-grid fixture has two existing grids",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "scope=all updates both existing grids without creating a parallel grid",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "responsive 390px: visible controls, no horizontal overflow, RTL",
+      "ok": true,
+      "detail": "{\"overflow\":false,\"box\":370,\"input\":true,\"button\":true,\"dir\":\"rtl\"}"
+    },
+    {
+      "name": "responsive 768px: visible controls, no horizontal overflow, RTL",
+      "ok": true,
+      "detail": "{\"overflow\":false,\"box\":600,\"input\":true,\"button\":true,\"dir\":\"rtl\"}"
+    },
+    {
+      "name": "responsive 1280px: visible controls, no horizontal overflow, RTL",
+      "ok": true,
+      "detail": "{\"overflow\":false,\"box\":1140,\"input\":true,\"button\":true,\"dir\":\"rtl\"}"
+    },
+    {
+      "name": "English UI is LTR and centrally translated",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "REST search returns real pipeline IDs and cache hit",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "anonymous admin REST endpoint is denied",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "admin AJAX without nonce is denied",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "admin settings expose all 12 sections",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "stored API key never appears in admin HTML or JS config",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "authorized admin AJAX with nonce returns index status",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "public search rate limit returns 429 after the configured window allowance",
+      "ok": true,
+      "detail": "429"
+    },
+    {
+      "name": "no uncaught browser JavaScript errors",
+      "ok": true,
+      "detail": ""
+    }
+  ],
+  "pageErrors": []
+}

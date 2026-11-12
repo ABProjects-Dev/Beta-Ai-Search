@@ -1,0 +1,2 @@
+6090f7b2ee5306da144e8371875635f92d9196e5364a68ec1acaa8f0b1386b73  release/beta-ai-search-1.0.0.zip
+ef01505ce16fb83c27e46d750edefb7abda11d75b519a70018f29e152610d9af  release/beta-ai-search-source-1.0.0.zip

@@ -1,0 +1,26 @@
+.bas-search{box-sizing:border-box;width:100%;margin:0 0 1.5rem;padding:1rem;color:#1e293b;background:transparent;font-family:inherit;line-height:1.5}
+.bas-search *,.bas-search *::before,.bas-search *::after{box-sizing:border-box}
+.bas-search[dir="rtl"]{text-align:right}.bas-search[dir="ltr"]{text-align:left}
+.bas-search__form{display:flex;align-items:stretch;gap:.65rem;width:100%}
+.bas-search__field{display:flex;align-items:center;flex:1 1 auto;min-width:0;min-height:3.25rem;padding:.25rem .85rem;background:#fff;border:1px solid #cbd5e1;border-radius:.75rem;transition:border-color .15s,box-shadow .15s}
+.bas-search__field:focus-within{border-color:#2563eb;box-shadow:0 0 0 3px rgba(37,99,235,.15)}
+.bas-search__leading-icon{display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto;color:#64748b;margin-inline-end:.6rem}
+.bas-search__input{display:block;width:100%;min-width:0;padding:.45rem 0;border:0!important;outline:0!important;box-shadow:none!important;background:transparent!important;color:inherit;font:inherit;font-size:1rem;line-height:1.5;appearance:none}
+.bas-search__input::placeholder{color:#94a3b8;opacity:1}.bas-search__input::-webkit-search-cancel-button{display:none}
+.bas-search__clear-text{display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto;width:2rem;height:2rem;margin:0;margin-inline-start:.35rem;padding:0;border:0;border-radius:50%;background:transparent;color:#64748b;font-size:1.5rem;line-height:1;cursor:pointer}
+.bas-search__clear-text[hidden],.bas-search [hidden]{display:none!important}
+.bas-search__clear-text:hover{background:#f1f5f9;color:#0f172a}
+.bas-search__submit{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;flex:0 0 auto;min-height:3.25rem;margin:0;padding:.7rem 1.35rem;border:0;border-radius:.75rem;background:#2563eb;color:#fff;font:inherit;font-size:.95rem;font-weight:650;line-height:1.4;cursor:pointer;transition:filter .15s,transform .15s}
+.bas-search__submit:hover{filter:brightness(1.08)}.bas-search__submit:active{transform:translateY(1px)}.bas-search__submit:disabled{opacity:.65;cursor:wait}
+.bas-search__spinner{width:1em;height:1em;border:2px solid currentColor;border-inline-end-color:transparent;border-radius:50%;animation:bas-spin .7s linear infinite}
+@keyframes bas-spin{to{transform:rotate(360deg)}}
+.bas-search__actions{display:flex;gap:.75rem;align-items:center;margin-top:.6rem}.bas-search__actions:empty{display:none}
+.bas-search__reset,.bas-search__retry{margin:0;padding:.25rem 0;border:0;background:transparent;color:inherit;font:inherit;font-size:.85rem;text-decoration:underline;text-underline-offset:.2em;cursor:pointer}
+.bas-search__retry{font-weight:650}.bas-search__status{min-height:1.4em;margin:.5rem 0 0;font-size:.875rem;color:#64748b}.bas-search__status:empty{display:none}.bas-search__status[data-kind="error"]{color:#b91c1c}.bas-search__status[data-kind="empty"]{color:#475569}
+.bas-template-minimal .bas-search__field{border-width:0 0 1px;border-radius:0;background:transparent;padding-inline:0}.bas-template-minimal .bas-search__submit{background:#0f172a;border-radius:.35rem}
+.bas-template-pill .bas-search__field,.bas-template-pill .bas-search__submit{border-radius:999px}.bas-template-pill .bas-search__field{padding-inline:1.15rem}
+.bas-grid-empty{padding:2rem 1rem;margin:.5rem 0;border:1px solid #e2e8f0;border-radius:.5rem;background:#f8fafc;color:#475569;text-align:center;font-size:1rem}
+.bas-pagination{display:flex;align-items:center;justify-content:center;gap:1rem;margin:1.25rem 0;clear:both}.bas-pagination__button{margin:0;padding:.5rem 1rem;border:1px solid #cbd5e1;border-radius:.4rem;background:#fff;color:inherit;font:inherit;cursor:pointer}.bas-pagination__button:disabled{opacity:.45;cursor:default}.bas-pagination__label{font-size:.9rem;color:#64748b}
+.bas-search button:focus-visible,.bas-pagination button:focus-visible{outline:2px solid #2563eb;outline-offset:2px}
+@media(max-width:767px){.bas-search{padding:.75rem}.bas-search__form{flex-wrap:wrap}.bas-search__field{flex-basis:100%}.bas-search__submit{width:100%}.bas-template-pill .bas-search__submit{width:auto;flex:1 1 auto}}
+@media(prefers-reduced-motion:reduce){.bas-search__spinner{animation:none}.bas-search__submit,.bas-search__field{transition:none}}
