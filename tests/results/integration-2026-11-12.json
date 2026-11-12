@@ -1,0 +1,306 @@
+{
+    "environment": {
+        "wp": "7.1.4",
+        "wc": "11.3.0",
+        "elementor": "4.4.0",
+        "php": "8.5.12",
+        "db": "SQLite integration drop-in"
+    },
+    "results": [
+        {
+            "name": "activation creates eight plugin-owned tables",
+            "ok": true,
+            "detail": ""
+        },
+        {
+            "name": "Elementor Free widget is registered",
+            "ok": true,
+            "detail": ""
+        },
+        {
+            "name": "shortcode renders central Persian no-result text setting",
+            "ok": true,
+            "detail": ""
+        },
+        {
+            "name": "variable product extracts parent plus each visible variation",
+            "ok": true,
+            "detail": ""
+        },
+        {
+            "name": "variation-specific color\/size\/stock are independent",
+            "ok": true,
+            "detail": ""
+        },
+        {
+            "name": "variation inherits non-varying parent material",
+            "ok": true,
+            "detail": ""
+        },
+        {
+            "name": "private\/internal metadata is excluded from AI documents",
+            "ok": true,
+            "detail": ""
+        },
+        {
+            "name": "allowlisted public custom field is included",
+            "ok": true,
+            "detail": ""
+        },
+        {
+            "name": "background index completed and activated a model",
+            "ok": true,
+            "detail": "entities=9"
+        },
+        {
+            "name": "controlled pipeline: کفش راحت برای پیاده روی",
+            "ok": true,
+            "detail": "[\"walkflex\",\"adidas_walk\"]"
+        },
+        {
+            "name": "controlled pipeline: یه کفش راحت میخوام واسه پیاده روی",
+            "ok": true,
+            "detail": "[\"walkflex\",\"adidas_walk\"]"
+        },
+        {
+            "name": "controlled pipeline: comfortable walking shoes",
+            "ok": true,
+            "detail": "[\"walkflex\",\"adidas_walk\"]"
+        },
+        {
+            "name": "controlled pipeline: کفش مشکی برای پیاده روی",
+            "ok": true,
+            "detail": "[\"adidas_walk\",\"walkflex\"]"
+        },
+        {
+            "name": "controlled pipeline: کفش مشکی سایز 42 برای پیاده روی تا ۱٫۳ میلیون تومان",
+            "ok": true,
+            "detail": "[\"walkflex\"]"
+        },
+        {
+            "name": "controlled pipeline: کفش نایکی مشکی برای پیاده روی",
+            "ok": true,
+            "detail": "[\"walkflex\"]"
+        },
+        {
+            "name": "controlled pipeline: کفش چرم مشکی برای پیاده روی",
+            "ok": true,
+            "detail": "[\"adidas_walk\",\"walkflex\"]"
+        },
+        {
+            "name": "controlled pipeline: لپ تاپ با رم 16 گیگ",
+            "ok": true,
+            "detail": "[\"laptop\"]"
+        },
+        {
+            "name": "controlled pipeline: کفش ضدآب مشکی برای پیاده روی",
+            "ok": true,
+            "detail": "[]"
+        },
+        {
+            "name": "controlled pipeline: یک چیز عجیب که در فروشگاه نیست",
+            "ok": true,
+            "detail": "[]"
+        },
+        {
+            "name": "cache hit avoids provider requests",
+            "ok": true,
+            "detail": ""
+        },
+        {
+            "name": "settings change invalidates cache",
+            "ok": true,
+            "detail": ""
+        },
+        {
+            "name": "deterministic price parsing: تا ۲ میلیون تومان",
+            "ok": true,
+            "detail": "{\"min\":null,\"max\":2000000,\"currency\":\"IRT\"}"
+        },
+        {
+            "name": "deterministic price parsing: بین ۱٫۵ تا ۲ میلیون تومان",
+            "ok": true,
+            "detail": "{\"min\":1500000,\"max\":2000000,\"currency\":\"IRT\"}"
+        },
+        {
+            "name": "deterministic price parsing: under 1.5m usd",
+            "ok": true,
+            "detail": "{\"min\":null,\"max\":1500000,\"currency\":\"USD\"}"
+        },
+        {
+            "name": "deterministic price parsing: تا 2,000,000 ریال",
+            "ok": true,
+            "detail": "{\"min\":null,\"max\":2000000,\"currency\":\"IRR\"}"
+        },
+        {
+            "name": "deterministic price parsing: از 500 هزار تا 1 میلیون تومان",
+            "ok": true,
+            "detail": "{\"min\":500000,\"max\":1000000,\"currency\":\"IRT\"}"
+        },
+        {
+            "name": "price flexibility 20 accepts exactly 5% overflow",
+            "ok": true,
+            "detail": ""
+        },
+        {
+            "name": "price flexibility 20 rejects 6% overflow",
+            "ok": true,
+            "detail": ""
+        },
+        {
+            "name": "missing explicit attribute is not treated as a match even at maximum flexibility",
+            "ok": true,
+            "detail": ""
+        },
+        {
+            "name": "threshold formulas are deterministic",
+            "ok": true,
+            "detail": ""
+        },
+        {
+            "name": "AI failure is explicit, never keyword fallback: http500",
+            "ok": true,
+            "detail": "provider_unavailable"
+        },
+        {
+            "name": "AI failure is explicit, never keyword fallback: badkey",
+            "ok": true,
+            "detail": "invalid_api_key"
+        },
+        {
+            "name": "AI failure is explicit, never keyword fallback: quota",
+            "ok": true,
+            "detail": "quota_exceeded"
+        },
+        {
+            "name": "AI failure is explicit, never keyword fallback: rate",
+            "ok": true,
+            "detail": "rate_limited"
+        },
+        {
+            "name": "AI failure is explicit, never keyword fallback: timeout",
+            "ok": true,
+            "detail": "timeout"
+        },
+        {
+            "name": "AI failure is explicit, never keyword fallback: transport",
+            "ok": true,
+            "detail": "connection_error"
+        },
+        {
+            "name": "AI failure is explicit, never keyword fallback: malformed",
+            "ok": true,
+            "detail": "invalid_provider_response"
+        },
+        {
+            "name": "AI failure is explicit, never keyword fallback: invalid_schema",
+            "ok": true,
+            "detail": "invalid_ai_schema"
+        },
+        {
+            "name": "CRUD price edit queues the product after completion",
+            "ok": true,
+            "detail": ""
+        },
+        {
+            "name": "incremental worker updates index without a new full scan",
+            "ok": true,
+            "detail": ""
+        },
+        {
+            "name": "variation creation queues parent",
+            "ok": true,
+            "detail": ""
+        },
+        {
+            "name": "new variation is indexed independently",
+            "ok": true,
+            "detail": ""
+        },
+        {
+            "name": "variation deletion removes its index entity",
+            "ok": true,
+            "detail": ""
+        },
+        {
+            "name": "pause prevents background processing",
+            "ok": true,
+            "detail": ""
+        },
+        {
+            "name": "resume completes a full rebuild",
+            "ok": true,
+            "detail": ""
+        },
+        {
+            "name": "embedding model change flags rebuild requirement",
+            "ok": true,
+            "detail": ""
+        },
+        {
+            "name": "rebuild activates the newly selected model only after completion",
+            "ok": true,
+            "detail": ""
+        },
+        {
+            "name": "renderer uses native WooCommerce product-card template in place",
+            "ok": true,
+            "detail": ""
+        },
+        {
+            "name": "tampered Loop Grid context is rejected",
+            "ok": true,
+            "detail": ""
+        },
+        {
+            "name": "hidden products are not rendered even when out-of-stock results are allowed",
+            "ok": true,
+            "detail": ""
+        },
+        {
+            "name": "automatic embedding selection never chooses chat-only Anthropic",
+            "ok": true,
+            "detail": ""
+        },
+        {
+            "name": "manual Anthropic embedding is rejected as unsupported",
+            "ok": true,
+            "detail": ""
+        },
+        {
+            "name": "query-understanding model resolves independently from active embedding provider",
+            "ok": true,
+            "detail": ""
+        },
+        {
+            "name": "API key is encrypted at rest and never stored in plaintext options",
+            "ok": true,
+            "detail": ""
+        },
+        {
+            "name": "partial tab save preserves provider configuration and other-language texts",
+            "ok": true,
+            "detail": ""
+        },
+        {
+            "name": "subscriber cannot manage plugin",
+            "ok": true,
+            "detail": ""
+        },
+        {
+            "name": "WooCommerce shop manager can manage plugin",
+            "ok": true,
+            "detail": ""
+        },
+        {
+            "name": "usage\/cost reporting contains real test-token costs and unknowns when rates are absent",
+            "ok": true,
+            "detail": ""
+        },
+        {
+            "name": "uninstall handler exists and data removal defaults off",
+            "ok": true,
+            "detail": ""
+        }
+    ]
+}
